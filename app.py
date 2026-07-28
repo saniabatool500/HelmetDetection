@@ -13,10 +13,9 @@ os.makedirs(STATIC_FOLDER, exist_ok=True)
 
 # YOLOv5 Model Load
 model = torch.hub.load(
-    'C:/Users/NG/Desktop/ComputerVisionProject/yolov5',
+    'ultralytics/yolov5',
     'custom',
-    path='C:/Users/NG/Desktop/ComputerVisionProject/yolov5/runs/train/exp3/weights/best.pt',
-    source='local'
+    path='best.pt'
 )
 
 @app.route("/")
